@@ -27,7 +27,7 @@
   <script>
     // inicializa GA (solo recogerá hits cuando se otorgue consentimiento)
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+    gtag('config', 'G-64JXH3VZCK', { anonymize_ip: true });
   </script>
 
 </head>
@@ -35,7 +35,7 @@
   <!-- Header -->
   <header class="wrap header">
     <a class="logo" href="#">
-      <img src="/src/img/logo.png" width="28" height="28" alt="">
+      <img src="/src/img/hero.png" width="28" height="28" alt="">
       <span>Muebles La Rueda</span>
     </a>
     <nav id="nav" class="nav">
@@ -47,22 +47,26 @@
     <button id="menuBtn" class="menu-btn" aria-label="Menú">☰</button>
   </header>
 
-  <!-- Hero (solo logo y claim, máximo contraste) -->
   <section class="hero">
-    <picture>
-      <img src="/src/img/hero.png" alt="Exposición Muebles La Rueda">
-    </picture>
-    <div class="hero-overlay"></div>
-    <div class="hero-box">
-      <img class="hero-logo" src="/src/img/logo.png" alt="Muebles La Rueda">
-      <h1>Muebles de calidad, atención cercana</h1>
-      <p>Proyectos a medida en La Ñora, Murcia.</p>
-      <div class="hero-cta">
-        <a href="#galeria" class="btn">Ver galería</a>
-        <a href="#contacto" class="btn btn-alt">Pedir información</a>
-      </div>
+  <picture>
+    <img src="/src/img/hero.png" alt="Exposición Muebles La Rueda">
+  </picture>
+  <div class="hero-overlay"></div>
+
+  <!-- Capa del logo (no tapa el texto, solo marca visual) -->
+  <img class="hero-mark" src="/src/img/hero.png" alt="Muebles La Rueda" aria-hidden="true">
+
+  <!-- Capa de texto con fondo semitransparente -->
+  <div class="hero-copy" role="group" aria-label="Mensaje de bienvenida">
+    <h1>Muebles de calidad, atención cercana</h1>
+    <p>Proyectos a medida en La Ñora, Murcia.</p>
+    <div class="hero-cta">
+      <a href="#galeria" class="btn">Ver galería</a>
+      <a href="#contacto" class="btn btn-alt">Pedir información</a>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Nosotros -->
   <section id="nosotros" class="wrap section">
@@ -112,14 +116,7 @@
       <h2>Cómo llegar</h2>
       <div class="map-wrap">
         <!-- Reemplaza por el embed real de Google: busca la dirección > Compartir > Insertar un mapa -->
-        <iframe
-          title="Mapa Muebles La Rueda"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          style="border:0"
-          allowfullscreen
-          src="https://www.google.com/maps?q=Calle%20La%20Rueda%205%20La%20Ñora%20Murcia&output=embed">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6198806570433!2d-1.1950084235431016!3d37.98599937193293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63803d99ebc273%3A0xfe6a3f8fb09b2e5f!2sMuebles%20La%20Rueda!5e0!3m2!1ses!2ses!4v1756544822348!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="cols-2 contact-blocs">
         <div>
@@ -128,7 +125,7 @@
         </div>
         <div>
           <h3>Contacto</h3>
-          <p>Teléfono: <a href="tel:+34XXXXXXXXX">+34 XXX XXX XXX</a><br>
+          <p>Teléfono: <a href="tel:+34968800882">+34 968 800 882</a><br>
              Email: <a href="mailto:info@muebleslarueda.com">info@muebleslarueda.com</a></p>
           <p>Dirección: Calle La Rueda, 5, La Ñora, Murcia</p>
         </div>

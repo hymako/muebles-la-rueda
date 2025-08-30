@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/",                 
+  base: "/",                 // con dominio propio, base raíz
   build: {
-    outDir: "docs",          
+    outDir: "docs",          // GitHub Pages servirá /docs
     emptyOutDir: true
   }
 });
